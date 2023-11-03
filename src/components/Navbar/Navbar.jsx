@@ -48,7 +48,7 @@ const currrentUSer = {
           {
             currrentUSer && 
             <div className="user"  onClick={()=> setopen(!open)}>
-<img src="./OIP.jpeg" alt="(img)" />
+<img  className="imageuser" src="OIP.jpeg" alt="(img)" />
 <span>{currrentUSer?.username}</span>
    {  open &&   <div className="option" >
           {
