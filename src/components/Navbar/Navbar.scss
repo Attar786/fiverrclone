@@ -31,7 +31,7 @@ color: white;
     // background-color: rgb(40, 150, 40);
     justify-content: space-between;
 .dot{
-color: green;
+color: green; 
 }
     .menu{
     display: flex;
@@ -39,14 +39,39 @@ color: green;
     color: white;
 
 
+
 .user{
     display: flex;
     align-items: center;
     gap: 10px;
+    position: relative;
+    cursor: pointer;
+    .option{
+        position: absolute;
+        top: 30px;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        border-radius: 5px;
+        gap:10px;
+        background-color: white;
+        color: gray;
+        padding: 20px;
+        border: 1px solid black;
+        width: 130px;
+        font-weight: 200px;
+        align-items: center;
+       
+    } 
+    .optionunder{
+        border: 1px solod black;
+    }
+
 }
-.options{
-    gap: 10px;
-}
+
+
+
+
 
 Button{
     background-color: white;

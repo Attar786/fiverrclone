@@ -4,6 +4,8 @@ import "./Navbar.scss";
 
 const Navbar = () => {
     const [active, setActive] = useState(true);
+    const [open , setopen] =useState(false);
+
 const isActive = ()=>
 {
   window.scrollY > 0 ? setActive(true) : setActive(false)
@@ -45,23 +47,22 @@ const currrentUSer = {
             {!currrentUSer?.isSellter && <span>Become a Seller</span> }
           {
             currrentUSer && 
-            <div className="user">
-<img src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2Fa%2Fa7%2FReact-icon.svg%2F1200px-React-icon.svg.png&tbnid=HD3eXsrstv-_cM&vet=12ahUKEwj75cWn9KWCAxUkkScCHVb8BcMQMygAegQIARBu..i&imgrefurl=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FReact_(software)&docid=Fiz1iGC5gm0AcM&w=1200&h=1043&q=react%20image&ved=https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/800px-React-icon.svg.png" alt="" />
+            <div className="user"  onClick={()=> setopen(!open)}>
+<img src="./OIP.jpeg" alt="(img)" />
 <span>{currrentUSer?.username}</span>
-        <div className="option">
+   {  open &&   <div className="option" >
           {
             currrentUSer?.isSellter && (
 <>
-<span>Gigs</span>
-<span>Gigs</span>
+<span className="optionunder">Gigs</span>
+<span className="optionunder">order</span>
 </>
 )
 }
-
-<span>Gigs</span>
-<span>Gigs</span>
-<span>Gigs</span>
-        </div>
+<span className="optionunder">message</span>
+<span className="optionunder">Logout</span> 
+<span className="optionunder">prof ile</span>
+        </div>}
         
             </div>
         
