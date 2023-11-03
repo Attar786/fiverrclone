@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 .navbar{
 align-items: center;
 display: flex;
@@ -16,12 +15,9 @@ top: 0;
 &.active {
     background-color: rgb(255, 255, 255);
 }
-
-
 &.active span {
     color : black
 }
-
 .container{
 padding: 22px;
     display: flex;
@@ -43,7 +39,6 @@ color: green;
     height: 20px;
     border-radius: 10px;
 }
-
 .user{
     display: flex;
     align-items: center;
@@ -72,11 +67,6 @@ color: green;
     }
 
 }
-
-
-
-
-
 Button{
     background-color: white;
     // padding-left: 10px;
@@ -93,12 +83,7 @@ Button{
         color: white;
     }
 }
-
-
 }
-
-
-
 }
 .mainmenu{
     color: white;
@@ -113,6 +98,4 @@ hr{
     height: 0;
     border: 1px solid lightgray;
 }
-
 }
-
